@@ -1,0 +1,25 @@
+{{define "admin/index1.html"}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>这是admin模版</h1>
+    <p>路径：我是templates/admin/index1.html</p>
+    <!-- {{.name}} 可以取到返回的name的值 => .返回的字段名称-->
+    <div>{{.name}}</div> 
+    <div>{{.msg}}</div>
+    <div>{{.code}}</div>
+
+    {{$b1 := .var}}
+    <section style="border: 1px solid #eee;margin-top:16px;">
+       <b>$b1 := .var</b>
+      <p>= {{$b1}}</p>
+    </section>
+  </body>
+</html>
+{{end}}
