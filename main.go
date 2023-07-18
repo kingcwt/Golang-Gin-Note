@@ -15,6 +15,7 @@ func routersGroup(r *gin.Engine) {
 	routers.DefaultRoutersInit(r)
 	routers.ApiRoutersInit(r)
 	routers.AdminRoutersInit(r)
+	routers.UsersRouters(r)
 	routers.Test(r)
 }
 
