@@ -68,9 +68,9 @@ func delete() string {
 func (u UsersController) GetList(r *gin.Context) {
 
 	// 查询数据库
-	// data := find()
+	data := find()
 	// data := create()
-	data := delete()
+	// data := delete()
 	r.JSON(200, gin.H{
 		"data": data,
 	})
