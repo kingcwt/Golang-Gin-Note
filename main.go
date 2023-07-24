@@ -18,6 +18,7 @@ func routersGroup(r *gin.Engine) {
 	routers.UsersRouters(r)
 	routers.Test(r)
 	routers.NavsRouters(r)
+	routers.ArticleRoutersInit(r)
 }
 
 func initMiddleware(r *gin.Context) {
